@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<servers>
+        <server>
+            <id>xiaoi</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+    </servers>
+
+  <mirrors>
+      <mirror>
+          <id>xiaoi</id>
+					<url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty/</url>
+          <mirrorOf>thirdparty</mirrorOf>
+      </mirror>
+      <mirror>
+          <id>ccssoft</id>
+          <name>Nexus Public Mirror</name>
+					<url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
+          <mirrorOf>central</mirrorOf>
+      </mirror>
+  </mirrors>
+
+  <repositories>
+   <repository>
+       <id>xiaoi-repository</id>
+			 <url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty/</url>
+   </repository>
+   <repository>
+       <id>mvnrepository</id>
+       <url>http://mvnrepository.com/artifact/</url>
+   </repository>
+ </repositories>
+
+</settings>

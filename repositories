@@ -1,5 +1,7 @@
 [repositories]
 local
-ccssoft-src:http://122.226.240.154:8081/nexus/content/groups/public/ 
+ali:http://maven.aliyun.com/nexus/content/groups/public/
 xiaoi-src:http://122.226.240.154:8081/nexus/content/repositories/thirdparty/
+ccssoft-src:http://122.226.240.154:8081/nexus/content/groups/public/ 
 nlp-src:http://maven.nlpcn.org/
+oschina:http://maven.oschina.net/content/groups/public/

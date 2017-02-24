@@ -20,12 +20,18 @@
 					<url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
           <mirrorOf>central</mirrorOf>
       </mirror>
+			<mirror>
+			    <id>nexus-aliyun</id>
+			    <mirrorOf>*</mirrorOf>
+			    <name>Nexus aliyun</name>
+			    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+			</mirror> 
   </mirrors>
 
   <repositories>
    <repository>
-       <id>xiaoi-repository</id>
-			 <url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty/</url>
+       <id>ccssoft-repository</id>
+			 <url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
    </repository>
    <repository>
        <id>mvnrepository</id>

@@ -11,3 +11,5 @@ XKBOPTIONS="ctrl:nocaps"
 cane@drunk:~$ sudo dpkg-reconfigure keyboard-configuration
 
 4.添加ubuntu源
+
+5.添加maven，git源配置

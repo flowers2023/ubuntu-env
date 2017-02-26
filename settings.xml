@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-	<servers>
+    <servers>
         <server>
             <id>xiaoi</id>
             <username>admin</username>
@@ -8,35 +8,35 @@
         </server>
     </servers>
 
-  <mirrors>
-      <mirror>
-          <id>xiaoi</id>
-					<url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty/</url>
-          <mirrorOf>thirdparty</mirrorOf>
-      </mirror>
-      <mirror>
-          <id>ccssoft</id>
-          <name>Nexus Public Mirror</name>
-					<url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
-          <mirrorOf>central</mirrorOf>
-      </mirror>
-			<mirror>
-			    <id>nexus-aliyun</id>
-			    <mirrorOf>*</mirrorOf>
-			    <name>Nexus aliyun</name>
-			    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-			</mirror> 
-  </mirrors>
+    <mirrors>
+        <mirror>
+            <id>xiaoi</id>
+            <url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty/</url>
+            <mirrorOf>thirdparty</mirrorOf>
+        </mirror>
+        <mirror>
+            <id>ccssoft</id>
+            <name>Nexus Public Mirror</name>
+            <url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+        <mirror>
+            <id>nexus-aliyun</id>
+            <mirrorOf>*</mirrorOf>
+            <name>Nexus aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </mirror>
+    </mirrors>
 
-  <repositories>
-   <repository>
-       <id>ccssoft-repository</id>
-			 <url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
-   </repository>
-   <repository>
-       <id>mvnrepository</id>
-       <url>http://mvnrepository.com/artifact/</url>
-   </repository>
- </repositories>
+    <repositories>
+        <repository>
+            <id>ccssoft-repository</id>
+            <url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>mvnrepository</id>
+            <url>http://mvnrepository.com/artifact/</url>
+        </repository>
+    </repositories>
 
 </settings>

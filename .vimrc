@@ -3,9 +3,11 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 " Tab键的宽度
 set tabstop=2
+set ts=4
 "统一缩进为2
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 " 设置包括vundle和初始化相关的runtime path
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -31,19 +33,14 @@ Plugin 'tpope/vim-fugitive'
 " 来自 http://vim-scripts.org/vim/scripts.html 的插件
 " Plugin '插件名称' 实际上是 Plugin 'vim-scripts/插件仓库名' 只是此处的用户名可以省略
 Plugin 'L9'
-" 由Git支持但不再github上的插件仓库 Plugin 'git clone 后面的地址'
-Plugin 'git://git.wincent.com/command-t.git'
-" 插件在仓库的子目录中.
-" 正确指定路径用以设置runtimepath. 以下范例插件在sparkup/vim目录下
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " =================自定义插件========================
 " scala 高亮插件
 Plugin 'derekwyatt/vim-scala'
 
 "vim目录树
- Bundle 'The-NERD-tree'
- Bundle 'The-NERD-Commenter'
+Bundle 'The-NERD-tree'
+Bundle 'The-NERD-Commenter'
 
 "Tag列表
 Bundle 'taglist.vim'

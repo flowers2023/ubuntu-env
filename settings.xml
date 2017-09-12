@@ -2,7 +2,12 @@
 <settings>
     <servers>
         <server>
-            <id>xiaoi</id>
+            <id>snapshots</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <server>
+            <id>releases</id>
             <username>admin</username>
             <password>admin123</password>
         </server>
@@ -10,17 +15,33 @@
 
     <mirrors>
         <mirror>
-            <id>xiaoi</id>
-            <name>Nexus xiaoi</name>
-            <url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty</url>
-            <mirrorOf>*</mirrorOf>
+            <id>xiaoi-releases</id>
+            <name>Nexus-xiaoi-pub</name>
+            <url>http://122.226.240.154:8081/nexus/content/repositories/releases/</url>
+            <mirrorOf>releases</mirrorOf>
         </mirror>
+
+        <mirror>
+            <id>xiaoi-snapshots</id>
+            <name>Nexus-xiaoi</name>
+            <url>http://122.226.240.154:8081/nexus/content/repositories/snapshots/</url>
+            <mirrorOf>snapshots</mirrorOf>
+        </mirror>
+
+        <mirror>
+            <id>xiaoi-releases</id>
+            <name>Nexus-xiaoi-pub</name>
+            <url>http://122.226.240.154:8081/nexus/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+
         <mirror>
             <id>ccssoft</id>
             <name>Nexus Public Mirror</name>
             <url>http://101.231.80.221:10086/nexus/content/groups/public/</url>
-            <mirrorOf>central</mirrorOf>
+            <mirrorOf>*</mirrorOf>
         </mirror>
+
         <mirror>
             <id>nexus-aliyun</id>
             <name>Nexus aliyun</name>
@@ -30,22 +51,32 @@
     </mirrors>
 
     <profiles>
-        <profile>  
+        <profile>
             <id>dev</id>  
             <repositories>  
                 <repository>  
-                    <id>xiaoi</id>  
-                    <url>http://122.226.240.154:8081/nexus/content/repositories/thirdparty</url>
-                    <releases>  
-                        <enabled>true</enabled>  
-                    </releases>  
-                    <snapshots>  
-                        <enabled>true</enabled>  
-                    </snapshots>  
-                </repository>  
-            </repositories>  
-        </profile>  
-    </profiles>  
+                    <id>releases</id>
+                    <url>http://122.226.240.154:8081/nexus/content/repositories/releases/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>  
+                    <id>snapshots</id>
+                    <url>http://122.226.240.154:8081/nexus/content/repositories/snapshots/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 
     <activeProfiles>  
         <activeProfile>dev</activeProfile>  

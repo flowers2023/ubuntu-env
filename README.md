@@ -33,4 +33,6 @@ mvn release:rollback
 mvn release:prepare   
 mvn release:perform   
 
-
+9.安装中文
+kane@ubuntu:~$ sudo apt install fcitx-table
+重启，setting->Region&Language 设置fcitx,点击 + ,然后点击chinese,点击拼音

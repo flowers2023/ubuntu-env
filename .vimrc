@@ -1,5 +1,13 @@
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-" 快捷键映射
+" 设置主题
+" $ git clone https://github.com/chriskempson/tomorrow-theme
+" $ cd tomorrow-theme/vim/colors
+" $ mkdir -p ~/.vim/colors
+" $ cp Tomorrow-Night.vim ~/.vim/colors/
+" $ vi ~/.vimrc
+syntax enable
+set background=dark
+colorscheme Tomorrow-Night
 
 " Tab键的宽度
 set tabstop=2
